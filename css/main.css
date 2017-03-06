@@ -1,0 +1,32 @@
+html{
+  background-color: #8c67a1;
+}
+
+h1{
+  color: #f0dd11;
+  font-family: Paytone One;
+  font-size: 49px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 98px;
+
+.score{
+  
+}
+.buttons {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 30px;
+  background: #fae608;
+  padding: 32px 7px 32px 6px;
+  text-decoration: none;
+}
+
+.buttons:hover {
+  background: #e6e617;
+  text-decoration: none;
+}

@@ -5,28 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>¡Tic Tac Toe!</title>
-  <link rel="stylesheet" href="css/main.css">
+  <title>Tic Tac Toe!</title>
+  <link rel="stylesheet" type="text/css"href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paytone+One" />
 
 </head>
 
 <body>
 
-  <div id="board" align="center">
-      <h1>TIC TAC TOE</h1>
+  <div class="tablero" align="center">
+      <h1 id="inicial">TIC TAC TOE</h1>
 
       <br><br>
 
-      <div id="score">
+      <div class="score">
         <label for="xWin">X score:</label>
-        <span id="xScore">0</span><br>
+        <span id="xScore" value="0">0</span><br>
         <label for="xWin">O score:</label>
-        <span id="oScore">0</span><br>
+        <span id="oScore" value ="0">0</span><br>
       </div>
 
       <br>
 
-      <div name="game">
+      <div class="game">
       <input type="button" class="buttons" id="j1" value="+">
       <input type="button" class="buttons" id="j2" value="+">
       <input type="button" class="buttons" id="j3" value="+"><br>

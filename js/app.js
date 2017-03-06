@@ -13,8 +13,11 @@ var j9 = document.getElementById('j9');
 var turno = false;
 var buton = document.getElementsByClassName('buttons');
 //var botones = {j1,j2,j3,j4,j5,j6,j7,j8,j9};
-var reset = document.getElementById('reset');
+var reinicia = document.getElementById('reset');
+var symbol = "+";
 //Para el score
+var xScore = document.getElementById('xScore');
+var oScore = document.getElementById('oScore');
 var playerX = false;
 var playerO = false;
 var xWins = 0;
@@ -89,5 +92,20 @@ function getWinner(){
 function gameScore(){
 		if(playerX === true){
       xWins++; xScore.innerHTML = xWins;}
-    else if(playerO === true){oWins++; oScore.innerHTML = oWins;}
+    if(playerO === true){
+      oWins++; oScore.InnerHTML = oWins;}
 }
+
+function playAgain(){
+  "use strict";
+  j1.setAttribute("value",symbol);
+  j2.setAttribute("value",symbol);
+  j3.setAttribute("value",symbol);
+  j4.setAttribute("value",symbol);
+  j5.setAttribute("value",symbol);
+  j6.setAttribute("value",symbol);
+  j7.setAttribute("value",symbol);
+  j8.setAttribute("value",symbol);
+  j9.setAttribute("value",symbol);
+}
+reset.addEventListener("click",playAgain);
